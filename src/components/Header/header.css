@@ -15,12 +15,3 @@ header{
     cursor: pointer;
     font-weight: bold;
 }
-
-.favoritos{
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #fff;
-    padding: 5px 14px;
-    color: black;
-    border-radius: 4px;
-}

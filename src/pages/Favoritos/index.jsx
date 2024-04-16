@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./favoritos.css"
 import { Link } from "react-router-dom";
 import {toast} from "react-toastify";
+import Button from "../../components/Button.jsx";
 
 function Favoritos(){
 
@@ -36,7 +37,7 @@ function Favoritos(){
     }
 
     return(
-        <div className="meus-filmes">
+        <div className="meus-filmes" >
             <h1>Meus Filmes</h1>
 
             {filmes.length === 0 && <span>Você não possui nenhum filme salvo. ,_,</span>}
@@ -47,8 +48,10 @@ function Favoritos(){
                         <li key={item.id}>
                             <span>{item.title}</span>
                             <div>
-                                <Link to={`/filme/${item.id}`}>Ver detalhes</Link>
-                                <button onClick={()=> excluirFilme(item.id)}>excluir</button>
+                                <Link to={`/filme/${item.id}`}>
+                                    <Button style={{margin:"0"}}>Detalhes</Button>
+                                </Link>
+                                <Button onClick={()=> excluirFilme(item.id)} style={{margin:"0"}}>Excluir</Button>
                             </div>
 
                         </li>
