@@ -84,8 +84,8 @@ function Filme(){
             <span>{filme.overview}</span>
             <strong>Avaliação: {filme.vote_average}/10</strong>
 
-            <div className="area-buttons">
-                <Button onClick={salvarFilme} >Salvar</Button>
+            <div className="area-buttons flex">
+                <Button onClick={salvarFilme} style={{marginRight:"12px"}}>Salvar</Button>
                 <Button>
                     <a target="blank" rel='external' href={`https://youtube.com/results?search_query=${filme.title} Trailer`}>Trailer</a>
                 </Button>

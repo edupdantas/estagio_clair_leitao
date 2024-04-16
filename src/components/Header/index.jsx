@@ -9,7 +9,7 @@ function Header(){
             <h1>EDU</h1>
             <Link className="logo" to="/" >Prime Flix</Link>
             <Link className="favoritos" to="/favoritos">
-                <Button style={{margin:0}}>Meus Filmes</Button>
+                <Button>Meus Filmes</Button>
             </Link>
             
         </header>
