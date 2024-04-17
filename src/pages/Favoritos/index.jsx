@@ -42,13 +42,13 @@ function Favoritos(){
 
             {filmes.length === 0 && <span>Você não possui nenhum filme salvo. ,_,</span>}
 
-            <ul>
+            <ul className="lista-filmes">
                 {filmes.map((item)=>{
                     return(
                         <li key={item.id}>
                             <span>{item.title}</span>
                             <div>
-                                <Link to={`/filme/${item.id}`}>
+                            <Link to={`/filme/${item.id}`} style={{padding:0,backgroundColor:"#FFF"}}>
                                     <Button>Detalhes</Button>
                                 </Link>
                                 <Button onClick={()=> excluirFilme(item.id)}>Excluir</Button>
